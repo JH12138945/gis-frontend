@@ -1,11 +1,10 @@
-# GIS点位地图开发项目
-## 项目说明
-地理空间工程实验，实现地图加载与POI点位标注
-- main：稳定主干分支
-- feature-map：地图功能开发分支
-## 环境
-Python3 + GIS空间库
-## 开发流程
-1. 新建feature-map分支开发
-2. 规范提交代码，推送远程
-3. GitHub提交PR、评审合并
+# GIS三层架构实验项目
+## 目录结构
+- /web：前端地图可视化层
+- /python：GIS空间数据处理层
+- /java：后端接口服务层
+- check-env.js：一键检测Node/Python/Java/Git环境版本
+## 各层GIS工程职责
+1. Web前端：底图加载、POI渲染、用户交互、展示GIS成果
+2. Python：shp/tif解析、坐标转换、空间分析、测绘数据预处理
+3. Java：REST接口、数据持久化、业务逻辑、前后端数据调度
